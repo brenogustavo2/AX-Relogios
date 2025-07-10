@@ -30,6 +30,7 @@
   <!-- Preloader Start  -->
    <div class="preloader">
       <div class="loader">
+        <img src="img/Monitor PC-removebg-preview.jpg" alt="Notebook girando" class="preloader-notebook">
       </div>
    </div>
   <!-- Preloader End  -->
@@ -91,7 +92,21 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="home-content">
-                   <h1>Digital Creation</h1>
+                   <h1 id="typed-title"></h1>
+                   <script>
+                   document.addEventListener("DOMContentLoaded", function() {
+                     const text = "Digital Creation";
+                     let i = 0;
+                     function type() {
+                       if (i < text.length) {
+                         document.getElementById("typed-title").innerHTML += text.charAt(i);
+                         i++;
+                         setTimeout(type, 120);
+                       }
+                     }
+                     type();
+                   });
+                   </script>
                    <p>Transforme sua presença online com a Digital Creation! Somos especialistas em criação de sites profissionais, landing pages, portfólios, lojas virtuais e soluções digitais sob medida para o seu negócio. Tenha um site moderno, responsivo e que gera resultados.</p>
                    <a href="#contact" class="btn mybtn1">Solicitar Orçamento</a>
                 </div>
@@ -104,6 +119,39 @@
         </div>
     </div>
  </section>
+
+<!-- Diferenciais Section Start -->
+<section class="diferenciais-section bg-light">
+  <div class="container">
+    <div class="section-title">
+      <h1 class="title">Nossos Diferenciais</h1>
+      <h2 class="subtitle">Por que escolher a Digital Creation?</h2>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <i class="fas fa-rocket fa-2x mb-2"></i>
+        <h5>Entrega Rápida</h5>
+        <p>Projetos entregues no prazo combinado.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-user-friends fa-2x mb-2"></i>
+        <h5>Atendimento Personalizado</h5>
+        <p>Suporte dedicado do início ao fim.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-star fa-2x mb-2"></i>
+        <h5>Qualidade Garantida</h5>
+        <p>Sites modernos, rápidos e seguros.</p>
+      </div>
+      <div class="col-md-3">
+        <i class="fas fa-lightbulb fa-2x mb-2"></i>
+        <h5>Criatividade</h5>
+        <p>Designs exclusivos para cada cliente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Diferenciais Section End -->
  <!-- Home Section End  -->
 
  <!-- About Section Start -->
@@ -226,31 +274,16 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="portfolio-item">
-                    <img class="img-fluid" src="img/Site Institucional_resized.webp" alt="Site Institucional">
+                    <a href="https://brenogustavo2.github.io/cafeteria-aroma-site/sobre.html" target="_blank">
+                        <img class="img-fluid" src="img/Aroma Café.jpeg" alt="Cafeteria Aroma">
+                    </a>
                     <div class="portfolio-content">
-                        <h5>Site Institucional</h5>
-                        <p>Empresa de consultoria - Layout moderno e responsivo.</p>
+                        <h5>Cafeteria Aroma</h5>
+                        <p>Site institucional para cafeteria, com página sobre, cardápio e contato.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="portfolio-item">
-                    <img class="img-fluid" src="img/Loja Virtual_resized.jpg" alt="Loja Virtual">
-                    <div class="portfolio-content">
-                        <h5>Loja Virtual</h5>
-                        <p>E-commerce completo com integração de pagamentos.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="portfolio-item">
-                    <img class="img-fluid" src="img/landing page_resized.webp" alt="Landing Page" style="width:350px; height:197px; object-fit:cover;">
-                    <div class="portfolio-content">
-                        <h5>Landing Page</h5>
-                        <p>Página de captura para campanhas de marketing digital.</p>
-                    </div>
-                </div>
-            </div>
+            <!-- Adicione mais exemplos aqui se desejar -->
         </div>
     </div>
  </section>
@@ -496,6 +529,69 @@
         <li title="black" style="background-color: #222222" onclick="setActiveStyle('black')"></li>
     </ul>
   </div>
+
+<!-- Botão Flutuante WhatsApp -->
+<a href="#" class="whatsapp-float" title="Fale conosco no WhatsApp">
+  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="30" cy="30" r="30" fill="#25D366"/>
+    <path d="M44.5 36.5C42.5 39.5 39.5 41.5 36 41.5C31.5 41.5 27.5 37.5 27.5 33C27.5 29.5 29.5 26.5 32.5 24.5C35.5 22.5 39.5 22.5 42.5 24.5C45.5 26.5 47.5 29.5 47.5 33C47.5 36.5 45.5 39.5 44.5 36.5Z" fill="white"/>
+    <path d="M30 12C20.1 12 12 20.1 12 30C12 33.2 13.1 36.2 15.1 38.7L12 48L21.3 44.9C23.8 46.9 26.8 48 30 48C39.9 48 48 39.9 48 30C48 20.1 39.9 12 30 12ZM30 44C27.2 44 24.6 43.1 22.5 41.5L22.2 41.3L16 43.5L18.2 37.3L18 37C16.4 34.9 15.5 32.3 15.5 29.5C15.5 21.8 21.8 15.5 29.5 15.5C37.2 15.5 43.5 21.8 43.5 29.5C43.5 37.2 37.2 43.5 29.5 43.5C29.5 43.5 29.5 44 30 44Z" fill="white"/>
+  </svg>
+</a>
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  transition: transform 0.2s;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* Efeito neon no rodapé */
+.footer-logo a {
+  color: #fff;
+  text-shadow: 0 0 8px #d70d25, 0 0 16px #d70d25;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/* Parallax animado nas formas do fundo */
+.bg-shapes > div {
+  background: rgba(215,13,37,0.1);
+  border-radius: 50%;
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-30px);}
+}
+</style>
+
+<style>
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: #fff;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+.preloader-notebook {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  100% { transform: rotate(360deg);}
+}
+</style>
 <!-- Live Style Switcher - demo only End -->
 
 
